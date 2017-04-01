@@ -435,7 +435,7 @@ NSLog(@"%@", x);
 
 ```
 ```objc
-// take:可以屏蔽一些值,去掉前面几个值---这里take为2 则只拿到前两个值
+// take:可以屏蔽一些值,去掉后面几个值---这里take为2 则只拿到前两个值
 RACSubject *subject = [RACSubject subject];
 [[subject take:2] subscribeNext:^(id x) {
 NSLog(@"%@", x);
